@@ -12,10 +12,12 @@ export default function Header(){
             <img src={icon} className="icon"
                 onClick={()=>{navigate('/')}}
                 id="insta-logo"
+                alt="icon"
             />
             <p>Instaclone</p>
             <img src={camera} className="icon" id="camera-icon"
                 onClick={()=>{navigate('/newpost')}}
+                alt="icon-1"
             />
         </header>
     </>
