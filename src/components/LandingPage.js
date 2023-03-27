@@ -4,10 +4,10 @@ import landingImage from '../images/landing-img.png'
 import '../styles/landingPage.css'
 
 
-export default function LandingPage(){
+export default function LandingPage() {
     const navigate = useNavigate()
 
-    return<>
+    return <>
         <div id="landing-container">
             <section id="img-container">
                 <img src={landingImage} alt="img-1" />
@@ -15,11 +15,11 @@ export default function LandingPage(){
             <section id="text-container">
                 <h2>Instaclone</h2>
                 <div id="btn-enter">
-                    <button onClick={()=>{navigate('/postview')}} >Enter</button>
+                    <button onClick={() => { navigate('/postview') }} >Enter</button>
                 </div>
 
             </section>
-            
+
         </div>
     </>
 }

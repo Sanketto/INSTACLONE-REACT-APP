@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-#insta-header{
+#insta-header {
     padding: 0 150px;
     display: flex;
     align-items: center;
@@ -11,26 +11,26 @@
     border-bottom: 1px solid #006238;
 }
 
-#camera-icon{
+#camera-icon {
     float: right;
 }
 
-#insta-logo:hover{
+#insta-logo:hover {
     cursor: pointer;
     border: 2px solid green;
 }
 
-#camera-icon:hover{
+#camera-icon:hover {
     cursor: pointer;
     border: 2px solid green;
 }
 
-.icon{
+.icon {
     width: 48px;
     height: 48px;
 }
 
-#insta-header p{
+#insta-header p {
     margin-left: 10px;
     width: 100%;
     font: normal normal normal 64px/85px Palatino;
@@ -39,7 +39,7 @@
     opacity: 1;
 }
 
-.post-container{
+.post-container {
     margin: 71px auto;
     width: 400px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -50,7 +50,7 @@
     box-shadow: 10px 10px 5px gray;
 }
 
-#post-img{
+#post-img {
     width: 400px;
     height: 250px;
     border: 1px solid #707070;
@@ -58,30 +58,30 @@
 }
 
 
-#post-img img{
+#post-img img {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
 }
 
-.post-container header{
-    padding: 10px 25px ;
+.post-container header {
+    padding: 10px 25px;
     display: flex;
     align-items: center;
 }
 
-.post-container header > img:hover{
+.post-container header>img:hover {
     cursor: pointer;
     border: 1px solid black;
     border-radius: 20%;
     padding: 0.2em;
 }
 
-.post-container header > div{
+.post-container header>div {
     width: 100%;
 }
 
-#more-option{
+#more-option {
     cursor: pointer;
     border: 2px solid black;
     width: 75px;
@@ -102,50 +102,50 @@
     text-align: center;
 }
 
-#more-option:hover{
+#more-option:hover {
     color: red;
 }
 
-.post-container header > div :nth-child(1){
+.post-container header>div :nth-child(1) {
     font: normal normal bold 16px/14px Helvetica;
-letter-spacing: 0px;
-color: #000000;
-opacity: 1;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
 }
 
-.post-container header>img{
+.post-container header>img {
     float: right;
-    
+
 }
 
-footer{
+footer {
     padding: 0 10px 20px 10px;
 }
 
-footer > div :nth-child(3){
+footer>div :nth-child(3) {
     float: right;
     font: normal normal normal 14px/16px Verdana;
-letter-spacing: 0px;
-color: #000000;
-opacity: 1;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
 }
 
-footer div > img{
+footer div>img {
     width: 20px;
     height: 20px;
 }
 
-footer > div :nth-child(1){
+footer>div :nth-child(1) {
     margin-right: 20px;
 }
 
-footer > div :nth-child(1):hover{
+footer>div :nth-child(1):hover {
     cursor: pointer;
     background-color: grey;
     border-radius: 8px;
 }
 
-footer :nth-child(2){
+footer :nth-child(2) {
     font: normal normal normal 12px/14px Verdana;
     letter-spacing: 0px;
     color: #707070;
@@ -153,11 +153,10 @@ footer :nth-child(2){
     margin-top: 10px
 }
 
-footer :nth-child(3){
+footer :nth-child(3) {
     font: normal normal bold 16px/18px Helvetica;
-letter-spacing: 0px;
-color: #000000;
-opacity: 1;
-margin-top: 10px
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-top: 10px
 }
-

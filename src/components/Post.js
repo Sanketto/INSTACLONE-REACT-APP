@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import share from '../images/share.png'
 import more from '../images/more_icon.png'
 import heart from '../images/heart.png'
@@ -6,6 +6,7 @@ import '../styles/post-view.css'
 
 const Post = ({ data, getLikes, deletePost }) => {
     const [moreOption, setMoreOption] = useState(false)
+    //console.log(data);
 
     return <>
         <div className="post-container">
@@ -15,7 +16,7 @@ const Post = ({ data, getLikes, deletePost }) => {
                     <p>{data.location}</p>
                 </div>
                 <img src={more} onClick={() => setMoreOption(toggle => (!toggle))} alt="icon-1" />
-                {moreOption && <div onClick={()=>deletePost(data)} id="more-option">Delete</div>}
+                {moreOption && <div onClick={() => deletePost(data)} id="more-option">Delete</div>}
             </header>
             <section id="post-img">
                 <img src={data.file} alt="post-img" />
