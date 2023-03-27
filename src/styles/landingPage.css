@@ -1,0 +1,47 @@
+#landing-container{
+    margin: 80px 0 0 400px;
+    display: flex;
+}
+
+#img-container{
+    width: 400px;
+}
+
+#img-container img{
+   max-width: 100%;
+}
+
+#text-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 126px;
+}
+
+#text-container h2{
+    font: normal normal normal 64px/85px Palatino;
+    letter-spacing: 0px;
+    color: #006238;
+    opacity: 1;
+}
+
+#btn-enter{
+    align-self: center;
+}
+
+#btn-enter button{
+    width: 110px;
+    height: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #006238;
+    border-radius: 16px;
+    font: normal normal normal 32px/39px Verdana;
+    letter-spacing: 0px;
+    color: #006238;
+    opacity: 1;
+}
+
+#btn-enter button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
