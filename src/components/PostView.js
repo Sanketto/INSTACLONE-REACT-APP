@@ -19,7 +19,7 @@ export default function PostView() {
             })
         .catch(err=>{
                 setError('Failed To Get Posts')
-                setloading(false)
+                setLoading(false)
             })
     }, [])
     const getLikes = (data) => {
