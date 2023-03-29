@@ -6,11 +6,20 @@ import Post from "./Post";
 
 export default function PostView() {
     const [user, setLike] = useState([]);
+    const [isLoading, setLoading] = useState(true);
+    const [error, setError] = useState("")
     useEffect(() => {
         axios.get('https://insta-backend-qv9o.onrender.com/posts')
             .then(res => {
                 res.data = res["data"].reverse();
-                setLike(res.data)
+                setLike(res.data);
+                setLoading(false);
+            setError('')
+            
+            })
+        .catch(err=>{
+                setError('Failed To Get Posts')
+                setloading(false)
             })
     }, [])
     const getLikes = (data) => {
@@ -45,9 +54,16 @@ export default function PostView() {
         <Header />
 
         {
-            (user.length < 1) ? <div className="post-container" style={{ textAlign: "center", fontSize: "30px" }}>No Posts Yet.</div>
-                :
-                user.map(data => {
+           ( isLoading)? <div className="post-container" style={{ textAlign: "center", fontSize: "30px" }}>
+                        <div class="lds-facebook"><div></div><div></div><div></div></div>    
+                    </div>      
+        :(user.length<1)? <div className="post-container" style={{ textAlign: "center", fontSize: "30px" }}>
+                No Posts Yet.   
+                     </div>      
+        :(error)? <div className="post-container" style={{ textAlign: "center", fontSize: "30px", color:"red" }}>
+                        {error}   
+                    </div>
+                :user.map(data => {
                     return <>
                         <Post data={data} getLikes={getLikes} deletePost={deletePost} key={data._id} />
                     </>
