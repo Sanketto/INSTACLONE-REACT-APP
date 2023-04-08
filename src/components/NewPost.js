@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/new-post.css'
-import Header from './Header'
+import Header from "./Header.js"
 
 
 export default function NewPost() {
@@ -23,9 +23,9 @@ export default function NewPost() {
     }))
   }
 
-  return (
-    <div className="post-form">
+  return <>
 <Header/>
+    <div className="post-form">
       <form encType="multipart/form-data" method="POST" onSubmit={(e) => {
         e.preventDefault();
         let time = new Date();
@@ -103,5 +103,5 @@ export default function NewPost() {
         </div>
       </form>
     </div>
-  );
+  </>
 }
