@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import '../styles/new-post.css'
+import Header from './Header'
 
 
 export default function NewPost() {
@@ -24,6 +25,7 @@ export default function NewPost() {
 
   return (
     <div className="post-form">
+<Header/>
       <form encType="multipart/form-data" method="POST" onSubmit={(e) => {
         e.preventDefault();
         let time = new Date();
